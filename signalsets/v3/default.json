@@ -12,7 +12,13 @@
     ]},
   { "hdr": "DA26", "cmd": {"22": "3083"}, "freq": 5,
     "signals": [
-      {"id": "TLX_ATF_TEMP", "path": "Transmission", "fmt": {"bix": 48, "len": 8, "offset": -40, "max": 215, "unit": "celsius"}, "name": "ATF Temperature", "suggestedMetric": "atfTemperature"}
+      {"id": "TLX_ATF_TEMP", "path": "Transmission", "fmt": {
+        "bix": 48, 
+        "len": 8, 
+        "offset": -40,
+        "max": 215, 
+        "unit": "celsius"
+      }, "name": "ATF Temperature", "suggestedMetric": "atfTemperature"}
     ]},
   { "hdr": "DA26", "cmd": {"22": "3086"}, "freq": 5,
     "signals": [
