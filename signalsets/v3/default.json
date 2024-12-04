@@ -16,7 +16,12 @@
     ]},
   { "hdr": "DA26", "cmd": {"22": "3086"}, "freq": 5,
     "signals": [
-      {"id": "TLX_CURRENT_GEAR", "path": "Transmission", "fmt": {"bix": 56, "len": 8, "max": 15, "unit": "none"}, "name": "Current Gear", "suggestedMetric": "currentGear"}
+      {"id": "TLX_CURRENT_GEAR", "path": "Transmission", "fmt": {
+        "bix": 56, 
+        "len": 8, 
+        "max": 15, 
+        "unit": "scalar"
+      }, "name": "Current Gear", "suggestedMetric": "currentGear"}
     ]},
   { "hdr": "DA26", "cmd": {"22": "2615"}, "freq": 5,
     "signals": [
