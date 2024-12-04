@@ -32,7 +32,7 @@
     ]},
   { "hdr": "DA26", "cmd": {"22": "2615"}, "freq": 5,
     "signals": [
-      {"id": "TLX_VCM_CYLINDERS", "path": "Engine", "fmt": {"bix": 48, "len": 8, "max": 6, "unit": "count"}, "name": "Active Cylinders (VCM)", "suggestedMetric": "activeCylinders"}
+      {"id": "TLX_VCM_CYLINDERS", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 6, "unit": "count"}, "name": "Active Cylinders (VCM)", "suggestedMetric": "activeCylinders"}
     ]}
   ]
   }
