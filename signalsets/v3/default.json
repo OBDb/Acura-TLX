@@ -13,7 +13,7 @@
   { "hdr": "DA26", "cmd": {"22": "3083"}, "freq": 5,
     "signals": [
       {"id": "TLX_ATF_TEMP", "path": "Transmission", "fmt": {
-        "bix": 48, 
+        "bix": 40, 
         "len": 8, 
         "offset": -40,
         "max": 215, 
@@ -23,7 +23,7 @@
   { "hdr": "DA26", "cmd": {"22": "3086"}, "freq": 5,
     "signals": [
       {"id": "TLX_CURRENT_GEAR", "path": "Transmission", "fmt": {
-        "bix": 56, 
+        "bix": 64, 
         "len": 8, 
         "max": 15, 
         "unit": "scalar"
@@ -31,7 +31,7 @@
     ]},
   { "hdr": "DA26", "cmd": {"22": "2615"}, "freq": 5,
     "signals": [
-      {"id": "TLX_VCM_CYLINDERS", "path": "Engine", "fmt": {"bix": 48, "len": 8, "max": 6, "unit": "count"}, "name": "Active Cylinders (VCM)", "suggestedMetric": "activeCylinders"}
+      {"id": "TLX_VCM_CYLINDERS", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 6, "unit": "count"}, "name": "Active Cylinders (VCM)", "suggestedMetric": "activeCylinders"}
     ]}
   ]
   }
