@@ -15,15 +15,16 @@
       {"id": "TLX_ATF_TEMP", "path": "Transmission", "fmt": {
         "bix": 40, 
         "len": 8, 
+        "scale": 1.8,
         "offset": -40,
-        "max": 215, 
+        "max": 300, 
         "unit": "celsius"
       }, "name": "ATF Temperature", "suggestedMetric": "atfTemperature"}
     ]},
   { "hdr": "DA26", "cmd": {"22": "3086"}, "freq": 5,
     "signals": [
       {"id": "TLX_CURRENT_GEAR", "path": "Transmission", "fmt": {
-        "bix": 64, 
+        "bix": 56, 
         "len": 8, 
         "max": 15, 
         "unit": "scalar"
@@ -31,7 +32,7 @@
     ]},
   { "hdr": "DA26", "cmd": {"22": "2615"}, "freq": 5,
     "signals": [
-      {"id": "TLX_VCM_CYLINDERS", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 6, "unit": "count"}, "name": "Active Cylinders (VCM)", "suggestedMetric": "activeCylinders"}
+      {"id": "TLX_VCM_CYLINDERS", "path": "Engine", "fmt": {"bix": 48, "len": 8, "max": 6, "unit": "count"}, "name": "Active Cylinders (VCM)", "suggestedMetric": "activeCylinders"}
     ]}
   ]
   }
