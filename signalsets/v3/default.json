@@ -10,13 +10,13 @@
     "signals": [
       {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 128, "len": 16, "max": 200, "min": -200, "unit": "celsius" }, "name": "Ambient Air Temperature"}
     ]},
-  { "hdr": "DA26", "cmd": {"22": "3083"}, "freq": 5,
+  { "hdr": "DB33", "cmd": {"22": "3083"}, "freq": 5,
     "signals": [
       {"id": "TLX_ATF_TEMP", "path": "Transmission", "fmt": {
         "bix": 48,
         "len": 16,
         "scale": 0.1,
-        "offset": 0,
+        "offset": -40,
         "max": 300,
         "unit": "celsius"
       }, "name": "ATF Temperature", "suggestedMetric": "atfTemperature"}
