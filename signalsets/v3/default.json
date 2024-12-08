@@ -15,7 +15,7 @@
       {"id": "TLX_ATF_TEMP", "path": "Transmission", "fmt": {
         "bix": 8,
         "len": 8,
-        "scale": 1,
+        "scale": 0.5,
         "offset": -40,
         "max": 300,
         "unit": "celsius"
