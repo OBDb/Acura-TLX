@@ -65,6 +65,118 @@
         "scale": 0.1,
         "unit": "kpa"
       }, "name": "A/C Pressure"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "632"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_TRANS_SLIP", "path": "Transmission", "fmt": {
+        "bix": 48,
+        "len": 16,
+        "scale": 0.1,
+        "unit": "rpm"
+      }, "name": "Transmission Slip"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "633"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_TRANS_TORQUE", "path": "Transmission", "fmt": {
+        "bix": 48,
+        "len": 16,
+        "scale": 0.1,
+        "unit": "nm"
+      }, "name": "Transmission Torque"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "804"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_ENGINE_LOAD", "path": "Engine", "fmt": {
+        "bix": 48,
+        "len": 8,
+        "scale": 0.392156863,  // 100/255 to get percentage
+        "unit": "percent"
+      }, "name": "Calculated Engine Load"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "807"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_THROTTLE_POS", "path": "Engine", "fmt": {
+        "bix": 48,
+        "len": 8,
+        "scale": 0.392156863,  // 100/255 to get percentage
+        "unit": "percent"
+      }, "name": "Throttle Position"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "806"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_INTAKE_TEMP", "path": "Engine", "fmt": {
+        "bix": 48,
+        "len": 8,
+        "scale": 1,
+        "offset": -40,
+        "unit": "celsius"
+      }, "name": "Intake Air Temperature"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "816"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_MAF", "path": "Engine", "fmt": {
+        "bix": 48,
+        "len": 16,
+        "scale": 0.01,
+        "unit": "grams_sec"
+      }, "name": "Mass Air Flow Rate"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "901"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_AC_COMP", "path": "Climate", "fmt": {
+        "bix": 48,
+        "len": 8,
+        "scale": 0.392156863,  // 100/255 for percentage
+        "unit": "percent"
+      }, "name": "A/C Compressor Load"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "634"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_TRANS_TEMP2", "path": "Transmission", "fmt": {
+        "bix": 48,
+        "len": 8,
+        "scale": 1,
+        "offset": -40,
+        "unit": "celsius"
+      }, "name": "Transmission Temperature 2"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "543"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_FUEL_RATE", "path": "Fuel", "fmt": {
+        "bix": 48,
+        "len": 16,
+        "scale": 0.05,  // Typical scaling for fuel rate in L/h
+        "unit": "liters_hour"
+      }, "name": "Fuel Flow Rate"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "233"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_FUEL_PRESSURE", "path": "Fuel", "fmt": {
+        "bix": 48,
+        "len": 16,
+        "scale": 0.1,
+        "unit": "kpa"
+      }, "name": "Fuel Rail Pressure"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "237"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_FUEL_TRIM_SHORT", "path": "Fuel", "fmt": {
+        "bix": 48,
+        "len": 8,
+        "scale": 0.78125,  // 100/128 to get percentage
+        "offset": -100,
+        "unit": "percent"
+      }, "name": "Short Term Fuel Trim"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "238"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_FUEL_TRIM_LONG", "path": "Fuel", "fmt": {
+        "bix": 48,
+        "len": 8,
+        "scale": 0.78125,  // 100/128 to get percentage
+        "offset": -100,
+        "unit": "percent"
+      }, "name": "Long Term Fuel Trim"}
     ]}
   ]
   }
