@@ -21,18 +21,50 @@
         "unit": "celsius"
       }, "name": "ATF Temperature", "suggestedMetric": "atfTemperature"}
     ]},
-  { "hdr": "DA26", "cmd": {"22": "3086"}, "freq": 5,
+  { "hdr": "DB33", "cmd": {"22": "3086"}, "freq": 5,
     "signals": [
       {"id": "TLX_CURRENT_GEAR", "path": "Transmission", "fmt": {
-        "bix": 56, 
-        "len": 8, 
-        "max": 15, 
+        "bix": 48,
+        "len": 8,
+        "max": 15,
         "unit": "scalar"
       }, "name": "Current Gear", "suggestedMetric": "currentGear"}
     ]},
-  { "hdr": "DA26", "cmd": {"22": "2615"}, "freq": 5,
+  { "hdr": "DB33", "cmd": {"22": "2615"}, "freq": 5,
     "signals": [
-      {"id": "TLX_VCM_CYLINDERS", "path": "Engine", "fmt": {"bix": 56, "len": 8, "max": 6, "unit": "count"}, "name": "Active Cylinders (VCM)", "suggestedMetric": "activeCylinders"}
+      {"id": "TLX_VCM_CYLINDERS", "path": "Engine", "fmt": {
+        "bix": 48,
+        "len": 8,
+        "max": 6,
+        "unit": "count"
+      }, "name": "Active Cylinders (VCM)", "suggestedMetric": "activeCylinders"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "630"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_TRANS_INPUT_SPEED", "path": "Transmission", "fmt": {
+        "bix": 48,
+        "len": 16,
+        "scale": 0.1,
+        "unit": "rpm"
+      }, "name": "Transmission Input Speed"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "631"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_TRANS_OUTPUT_SPEED", "path": "Transmission", "fmt": {
+        "bix": 48,
+        "len": 16,
+        "scale": 0.1,
+        "unit": "rpm"
+      }, "name": "Transmission Output Speed"}
+    ]},
+  { "hdr": "DB33", "cmd": {"22": "900"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_AC_PRESSURE", "path": "Climate", "fmt": {
+        "bix": 48,
+        "len": 8,
+        "scale": 0.1,
+        "unit": "kpa"
+      }, "name": "A/C Pressure"}
     ]}
   ]
   }
