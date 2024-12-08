@@ -15,8 +15,8 @@
       {"id": "TLX_ATF_TEMP", "path": "Transmission", "fmt": {
         "bix": 24,
         "len": 8,
-        "scale": 1,
-        "offset": 0,
+        "scale": 1.8,
+        "offset": -40,
         "max": 300,
         "unit": "celsius"
       }, "name": "ATF Temperature", "suggestedMetric": "atfTemperature"}
