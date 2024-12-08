@@ -13,10 +13,10 @@
   { "hdr": "DA26", "cmd": {"22": "3083"}, "freq": 5,
     "signals": [
       {"id": "TLX_ATF_TEMP", "path": "Transmission", "fmt": {
-        "bix": 40,
-        "len": 8,
-        "scale": 1.8,
-        "offset": 32,
+        "bix": 48,
+        "len": 16,
+        "scale": 0.1,
+        "offset": 0,
         "max": 300,
         "unit": "celsius"
       }, "name": "ATF Temperature", "suggestedMetric": "atfTemperature"}
