@@ -9,7 +9,7 @@
   { "hdr": "DA60", "cmd": {"22": "7028"}, "freq": 5,
     "signals": [
       {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 128, "len": 16, "max": 200, "min": -200, "unit": "celsius" }, "name": "Front right tire pressure"},
-      {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 144, "len": 16, "max": 200, "min": -40, "unit": "celsius", "offset": -40}, "name": "ATF temperature", "suggestedMetric": "transmissionFluidTemperature"}
+      {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 214, "min": -40, "unit": "celsius", "offset": -40}, "name": "ATF temperature", "suggestedMetric": "transmissionFluidTemperature"}
     ]}
   ]
   }
