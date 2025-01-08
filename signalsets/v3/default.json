@@ -41,10 +41,11 @@
     ]},
   { "hdr": "DA60", "cmd": {"22": "7028"}, "freq": 5,
     "signals": [
-      {"id": "TLX_AAT", "path": "Environment", "fmt": {
+      {"id": "TLX_AAT", "path": "Climate", "fmt": {
         "bix": 128,
         "len": 16,
         "sign": true,
+        "div": 16,
         "unit": "celsius"
       }, "name": "Ambient Air Temperature"}
     ]}
