@@ -26,6 +26,7 @@
           "7": {"description": "Drive 7", "value": "D7"},
           "8": {"description": "Drive 8", "value": "D8"},
           "9": {"description": "Drive 9", "value": "D9"},
+          "14": {"description": "Neutral", "value": "N"},
           "15": {"description": "Reverse", "value": "R"}
         }
       }, "name": "Transmission gear", "suggestedMetric": "transmissionGear"}
