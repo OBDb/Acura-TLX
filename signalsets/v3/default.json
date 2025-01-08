@@ -8,7 +8,7 @@
     ]},
   { "hdr": "DA60", "cmd": {"22": "3083"}, "freq": 5,
     "signals": [
-      {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 255, "add": -40, "unit": "celsius"}, "name": "ATF temperature", "suggestedMetric": "transmissionFluidTemperature"}
+      {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "min": -50, "max": 255, "add": -40, "unit": "celsius"}, "name": "ATF temperature", "suggestedMetric": "transmissionFluidTemperature"}
     ]},
   { "hdr": "DAF1", "cmd": {"22": "3086"}, "freq": 5,
     "signals": [
