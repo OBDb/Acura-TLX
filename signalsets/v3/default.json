@@ -38,6 +38,15 @@
         "max": 6,
         "unit": "scalar"
       }, "name": "Active cylinders"}
+    ]},
+  { "hdr": "DA60", "cmd": {"22": "7028"}, "freq": 5,
+    "signals": [
+      {"id": "TLX_AAT", "path": "Environment", "fmt": {
+        "bix": 128,
+        "len": 16,
+        "sign": true,
+        "unit": "celsius"
+      }, "name": "Ambient Air Temperature"}
     ]}
   ]
 }
