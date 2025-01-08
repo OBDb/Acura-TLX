@@ -10,9 +10,9 @@
     "signals": [
       {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "min": -50, "max": 200, "add": -40, "unit": "celsius"}, "name": "ATF temperature", "suggestedMetric": "transmissionFluidTemperature"}
     ]},
-  { "hdr": "DB33", "cmd": {"22": "3086"}, "freq": 5,
+  { "hdr": "DB33", "cmd": {"22": "3086"}, "freq": 1,
     "signals": [
-      {"id": "TLX_GEAR", "path": "Transmission", "fmt": {
+      {"id": "TLX_GEAR", "path": "sid", "fmt": {
         "bix": 160,
         "len": 8,
         "map": {
@@ -33,7 +33,7 @@
     ]},
   { "hdr": "DB33", "cmd": {"22": "2615"}, "freq": 5,
     "signals": [
-      {"id": "TLX_ACTIVE_CYL", "path": "Engine", "fmt": {
+      {"id": "TLX_ACTIVE_CYL", "path": "sid", "fmt": {
         "bix": 400,
         "len": 8,
         "max": 6,
