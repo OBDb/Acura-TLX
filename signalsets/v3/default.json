@@ -13,7 +13,7 @@
   { "hdr": "DAF1", "cmd": {"22": "3086"}, "freq": 5,
     "signals": [
       {"id": "TLX_GEAR", "path": "Transmission", "fmt": {
-        "bix": 56,
+        "bix": 160,
         "len": 8,
         "map": {
           "0": {"description": "Park", "value": "P"},
