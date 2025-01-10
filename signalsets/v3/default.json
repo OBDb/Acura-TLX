@@ -40,7 +40,7 @@
         "unit": "scalar"
       }, "name": "Active cylinders"}
     ]},
-  { "hdr": "DB33", "cmd": {"22": "0105"}, "freq": 5,
+  { "hdr": "DB33", "cmd": {"01": "05"}, "freq": 5,
     "signals": [
       {"id": "TLX_ECT", "path": "sid", "fmt": {"bix": 0, "len": 8, "min": -40, "max": 215, "unit": "celsius"}, "name": "Engine coolant temperature", "suggestedMetric": "engineCoolantTemp"}
     ]}
