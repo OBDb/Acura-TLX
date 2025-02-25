@@ -1,16 +1,16 @@
 { "commands": [
-{ "hdr": "DA26", "cmd": {"22": "6001"}, "freq": 15,
+{ "hdr": "DA26", "cmd": {"22": "6001"}, "freq": 0,
   "signals": [
     {"id": "TLX_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
     {"id": "TLX_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "TLX_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
     {"id": "TLX_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"}
   ]},
-{ "hdr": "DB33", "cmd": {"22": "3083"}, "freq": 5,
+{ "hdr": "DB33", "cmd": {"22": "3083"}, "freq": 0,
   "signals": [
     {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 200, "min": -50, "add": -40, "unit": "celsius" }, "name": "ATF temperature"}
   ]},
-{ "hdr": "DB33", "cmd": {"22": "3086"}, "freq": 0.75,
+{ "hdr": "DB33", "cmd": {"22": "3086"}, "freq": 0,
   "signals": [
     {"id": "TLX_GEAR", "path": "Transmission", "name": "Transmission gear", "fmt": {"bix": 160, "len": 8, "map": {
           "0":  { "description": "Park",    "value": "P" },
@@ -28,11 +28,11 @@
         }}
     }
   ]},
-{ "hdr": "DB33", "cmd": {"22": "2615"}, "freq": 1,
+{ "hdr": "DB33", "cmd": {"22": "2615"}, "freq": 0,
   "signals": [
     {"id": "TLX_ACTIVE_CYL", "path": "Engine", "fmt": {"bix": 400, "len": 8, "max": 6, "unit": "scalar" }, "name": "Active cylinders"}
   ]},
-{ "hdr": "DB33", "cmd": {"01": "05"}, "freq": 5,
+{ "hdr": "DB33", "cmd": {"01": "05"}, "freq": 0,
   "signals": [
     {"id": "TLX_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
   ]}
