@@ -5,8 +5,10 @@
     {"id": "TLX_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "TLX_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
     {"id": "TLX_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "TLX_TIRE_TEMP_FR", "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 255, "unit": "scalar"}, "name": "Front right tire temperature indicator"},
-    {"id": "TLX_TIRE_TEMP_FL", "path": "Tires", "fmt": {"bix": 168, "len": 8, "max": 255, "unit": "scalar"}, "name": "Front left tire temperature indicator"},
+    {"id": "TLX_TIRE_TEMP_FR", "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius"}, "name": "Front right tire temperature", "suggestedMetric": "frontRightTireTemperature"},
+    {"id": "TLX_TIRE_TEMP_FL", "path": "Tires", "fmt": {"bix": 168, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius"}, "name": "Front left tire temperature", "suggestedMetric": "frontLeftTireTemperature"},
+    {"id": "TLX_TIRE_TEMP_FR_RAW", "path": "Tires", "fmt": {"bix": 160, "len": 16, "max": 65535, "unit": "scalar"}, "name": "Front right tire raw value (diagnostic)"},
+    {"id": "TLX_TIRE_TEMP_FL_RAW", "path": "Tires", "fmt": {"bix": 168, "len": 16, "max": 65535, "unit": "scalar"}, "name": "Front left tire raw value (diagnostic)"},
     {"id": "TLX_TIRE_AUX", "path": "Tires", "fmt": {"bix": 120, "len": 8, "max": 255, "unit": "scalar"}, "name": "Auxiliary tire parameter"}
   ]},
 { "hdr": "DB33", "cmd": {"22": "3083"}, "freq": 0,
@@ -30,7 +32,7 @@
           "9":  { "description": "Drive 9", "value": "D9" },
           "14": { "description": "Neutral", "value": "N" },
           "15": { "description": "Reverse", "value": "R" }
-        }, "max": 15 }
+        }}
     }
   ]},
 { "hdr": "DB33", "cmd": {"22": "2615"}, "freq": 0,
@@ -70,8 +72,10 @@
   ]},
 { "hdr": "DA26", "cmd": {"22": "6002"}, "freq": 0,
   "signals": [
-    {"id": "TLX_TIRE_TEMP_RR", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 125, "min": -40, "add": -40, "unit": "celsius"}, "name": "Rear right tire temperature"},
-    {"id": "TLX_TIRE_TEMP_RL", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 125, "min": -40, "add": -40, "unit": "celsius"}, "name": "Rear left tire temperature"}
+    {"id": "TLX_TIRE_TEMP_RR", "path": "Tires", "fmt": {"bix": 160, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius"}, "name": "Rear right tire temperature", "suggestedMetric": "rearRightTireTemperature"},
+    {"id": "TLX_TIRE_TEMP_RL", "path": "Tires", "fmt": {"bix": 176, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius"}, "name": "Rear left tire temperature", "suggestedMetric": "rearLeftTireTemperature"},
+    {"id": "TLX_TIRE_TEMP_RR_RAW", "path": "Tires", "fmt": {"bix": 160, "len": 16, "max": 65535, "unit": "scalar"}, "name": "Rear right tire raw value (diagnostic)"},
+    {"id": "TLX_TIRE_TEMP_RL_RAW", "path": "Tires", "fmt": {"bix": 176, "len": 16, "max": 65535, "unit": "scalar"}, "name": "Rear left tire raw value (diagnostic)"}
   ]},
 { "hdr": "DB33", "cmd": {"01": "06"}, "freq": 0,
   "signals": [
