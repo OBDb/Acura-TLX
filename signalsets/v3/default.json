@@ -9,28 +9,40 @@
     "name": "Rear left tire pressure",
     "path": "Tires",
     "suggestedMetric": "rearLeftTirePressure",
-    "unit": "kilopascal"
+    "fmt": {
+        "len": 8,
+        "unit": "kilopascal"
+    }
 },
     {
     "id": "TLX_TP_FR",
     "name": "Front right tire pressure",
     "path": "Tires",
     "suggestedMetric": "frontRightTirePressure",
-    "unit": "kilopascal"
+    "fmt": {
+        "len": 8,
+        "unit": "kilopascal"
+    }
 },
     {
     "id": "TLX_TP_FL",
     "name": "Front left tire pressure",
     "path": "Tires",
     "suggestedMetric": "frontLeftTirePressure",
-    "unit": "kilopascal"
+    "fmt": {
+        "len": 8,
+        "unit": "kilopascal"
+    }
 },
     {
     "id": "TLX_TP_RR",
     "name": "Rear right tire pressure",
     "path": "Tires",
     "suggestedMetric": "rearRightTirePressure",
-    "unit": "kilopascal"
+    "fmt": {
+        "len": 8,
+        "unit": "kilopascal"
+    }
 }
     ]
   },
@@ -43,8 +55,10 @@
     "id": "TLX_ECT",
     "name": "Engine coolant temperature",
     "path": "Engine",
-    "suggestedMetric": "",
-    "unit": "celsius"
+    "fmt": {
+        "len": 8,
+        "unit": "celsius"
+    }
 }
     ]
   },
@@ -57,8 +71,10 @@
     "id": "TLX_ATF",
     "name": "ATF temperature",
     "path": "Transmission",
-    "suggestedMetric": "",
-    "unit": "celsius"
+    "fmt": {
+        "len": 8,
+        "unit": "celsius"
+    }
 }
     ]
   },
@@ -71,8 +87,9 @@
     "id": "TLX_GEAR",
     "name": "Transmission gear",
     "path": "Transmission",
-    "suggestedMetric": "",
-    "unit": ""
+    "fmt": {
+        "len": 8
+    }
 }
     ]
   },
@@ -85,43 +102,10 @@
     "id": "TLX_ACTIVE_CYL",
     "name": "Active cylinders",
     "path": "Engine",
-    "suggestedMetric": "",
-    "unit": "scalar"
-}
-    ]
-  },
-  {
-    "hdr": "DA10",
-    "cmd": {"22":"2660"},
-    "freq": 0.5,
-    "signals": [
-    {
-    "id": "TLX_ODO",
-    "name": "Odometer",
-    "path": "Trips",
-    "suggestedMetric": "odometer",
-    "unit": "kilometers"
-},
-    {
-    "id": "TLX_RUNTM",
-    "name": "Time since engine start",
-    "path": "Clocks",
-    "suggestedMetric": "",
-    "unit": "seconds"
-}
-    ]
-  },
-  {
-    "hdr": "DA1D",
-    "cmd": {"22":"2221"},
-    "freq": 0.5,
-    "signals": [
-    {
-    "id": "TLX_GEAR",
-    "name": "Gear",
-    "path": "Transmission",
-    "suggestedMetric": "",
-    "unit": "scalar"
+    "fmt": {
+        "len": 8,
+        "unit": "scalar"
+    }
 }
     ]
   },
@@ -134,8 +118,45 @@
     "id": "TLX_AAT",
     "name": "Outside air temperature",
     "path": "Climate",
-    "suggestedMetric": "",
-    "unit": "celsius"
+    "fmt": {
+        "bix": 136,
+        "len": 8,
+        "unit": "celsius"
+    }
+}
+    ]
+  },
+  {
+    "hdr": "DA1D",
+    "cmd": {"22":"2221"},
+    "freq": 0.5,
+    "signals": [
+    {
+    "id": "TLX_GEAR",
+    "name": "Gear",
+    "path": "Transmission",
+    "fmt": {
+        "bix": 184,
+        "len": 8,
+        "unit": "scalar"
+    }
+}
+    ]
+  },
+  {
+    "hdr": "DA10",
+    "cmd": {"22":"2660"},
+    "freq": 0.5,
+    "signals": [
+    {
+    "id": "TLX_RUNTM",
+    "name": "Time since engine start",
+    "path": "Clocks",
+    "fmt": {
+        "bix": 368,
+        "len": 16,
+        "unit": "seconds"
+    }
 }
     ]
   }
