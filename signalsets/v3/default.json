@@ -36,12 +36,12 @@
       "signals": [
         {"id": "TLX_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
       ]},
-    { "hdr": "DA10", "fcm1": true, "cmd": {"22": "2660"}, "freq": 5,
+    { "hdr": "DA10", "cmd": {"22": "2660"}, "freq": 5,
       "signals": [
         {"id": "TLX_ODO",   "path": "Trips",  "fmt": {"bix": 344, "len": 24, "max": 4294967295, "unit": "kilometers" }, "name": "Odometer",                "suggestedMetric": "odometer"},
         {"id": "TLX_RUNTM", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535,      "unit": "seconds"    }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
       ]},
-    { "hdr": "DA60", "fcm1": true, "cmd": {"22": "7028"}, "freq": 5,
+    { "hdr": "DA60", "cmd": {"22": "7028"}, "freq": 5,
       "signals": [
         {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 136, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Outside air temperature"}
       ]}
