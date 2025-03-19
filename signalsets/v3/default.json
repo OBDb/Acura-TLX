@@ -43,7 +43,7 @@
       ]},
     { "hdr": "DA60", "cmd": {"22": "7028"}, "freq": 5,
       "signals": [
-        {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 136, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Outside air temperature"}
+        {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 136, "len": 8, "max": 215, "min": -40, "add": 0, "unit": "celsius" }, "name": "Outside air temperature"}
       ]}
     ]
 }
