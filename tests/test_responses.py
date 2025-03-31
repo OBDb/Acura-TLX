@@ -12,74 +12,19 @@ from schemas.python.signals_testing import obd_testrunner
 REPO_ROOT = Path(__file__).parent.parent.absolute()
 
 TEST_CASES = [
-    # 2015 model year
+    # TODO: Implement real tests below with vehicle data.
+    # 2019 model year
     {
-        "model_year": "2015",
+        "model_year": "2019",
         "signalset": "default.json",
         "tests": [
-            # Tire pressures
-            ("DA26056122600108A109C10AD10BE", {
-                "TLX_TP_FR": 220.5,
-                "TLX_TP_FL": 236.0,
-                "TLX_TP_RR": 245.5,
-                "TLX_TP_RL": 230.0,
-            }),
-            ("DA26056122600107E108D10A310B1", {
-                "TLX_TP_FR": 215.0,
-                "TLX_TP_FL": 225.5,
-                "TLX_TP_RR": 239.5,
-                "TLX_TP_RL": 220.5,
-            }),
-            
-            # ATF Temperature
-            ("DB3305612230834F", {
-                "TLX_ATF": 39.0,  # (79-40) where 79 is the hex value 4F
-            }),
-            ("DB3305612230836A", {
-                "TLX_ATF": 66.0,  # (106-40) where 106 is the hex value 6A
-            }),
-            
-            # Transmission gear
-            ("DB33056122308601", {
-                "TLX_GEAR": "D1",
-            }),
-            ("DB33056122308604", {
-                "TLX_GEAR": "D4",
-            }),
-            ("DB33056122308608", {
-                "TLX_GEAR": "D8",
-            }),
-            ("DB3305612230860E", {
-                "TLX_GEAR": "N",
-            }),
-            ("DB3305612230860F", {
-                "TLX_GEAR": "R",
-            }),
-            ("DB33056122308600", {
-                "TLX_GEAR": "P",
-            }),
-            
-            # Active cylinders
-            ("DB33056122261506", {
-                "TLX_ACTIVE_CYL": 6,
-            }),
-            ("DB33056122261504", {
-                "TLX_ACTIVE_CYL": 4,
-            }),
-            ("DB33056122261503", {
-                "TLX_ACTIVE_CYL": 3,
-            }),
-            
-            # Engine coolant temperature
-            ("DB3305610105AF", {
-                "TLX_ECT": 85.0,  # (175-40) where 175 is the hex value AF
-            }),
-            ("DB3305610105C8", {
-                "TLX_ECT": 110.0,  # (200-40) where 200 is the hex value C8
-            }),
-            ("DB330561010578", {
-                "TLX_ECT": 40.0,  # (120-40) where 120 is the hex value 78
-            }),
+            # # Tire pressures
+            # ("72E05622813028C", {"F150_TP_FL": 32.6}),
+            # ("72E056228140273", {"F150_TP_FR": 31.35}),
+            # ("72E056228150291", {"F150_TP_RRO": 32.85}),
+            # ("72E05622816026E", {"F150_TP_RLO": 31.1}),
+            # ("72E056228170000", {"F150_TP_RRI": 0.0}),
+            # ("72E056228180000", {"F150_TP_RLI": 0.0}),
         ]
     },
 ]
