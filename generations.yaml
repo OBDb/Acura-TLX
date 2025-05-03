@@ -1,0 +1,10 @@
+generations:
+  - name: "First Generation"
+    start_year: 2015
+    end_year: 2020
+    description: "The first generation TLX replaced both the TL and TSX in Acura's lineup, offering a sport sedan that bridged the gap between the two previous models. Engine options included a 2.4L four-cylinder with 206 HP paired with an 8-speed dual-clutch transmission, or a 3.5L V6 with 290 HP paired with a 9-speed automatic. The V6 model was available with Acura's Super Handling All-Wheel Drive (SH-AWD) system. A facelift in 2018 updated the exterior styling to incorporate Acura's diamond pentagon grille."
+
+  - name: "Second Generation"
+    start_year: 2021
+    end_year: null
+    description: "The current TLX features more distinctive styling and a return to a performance focus. Built on an Acura-exclusive platform with double-wishbone front suspension, the standard TLX comes with a turbocharged 2.0L four-cylinder producing 272 HP. The performance-oriented Type S variant, reviving Acura's Type S performance line, features a turbocharged 3.0L V6 with 355 HP, along with Brembo brakes, adaptive dampers, and sport-tuned SH-AWD. The interior showcases improved materials and Acura's True Touchpad Interface infotainment system."
