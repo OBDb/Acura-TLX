@@ -1,9 +1,4 @@
 { "commands": [
-{ "hdr": "DA0E", "dbg": true, "cmd": {"22": "2612"}, "freq": 1,
-  "signals": [
-    {"id": "TLX_GEAR_V2", "path": "Transmission", "fmt": {"bix": 352, "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear v2"},
-    {"id": "TLX_GEAR_V3", "path": "Transmission", "fmt": {"bix": 368, "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear v3"}
-  ]},
 { "hdr": "DA10", "dbg": true, "cmd": {"22": "2660"}, "freq": 5,
   "signals": [
     {"id": "TLX_ODO",   "path": "Trips",  "fmt": {"bix": 344, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer",                "suggestedMetric": "odometer"},
@@ -42,10 +37,6 @@
     {"id": "TLX_MIS_4", "path": "Engine", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count 4"},
     {"id": "TLX_MIS_5", "path": "Engine", "fmt": {"bix": 80, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count 5"},
     {"id": "TLX_MIS_6", "path": "Engine", "fmt": {"bix": 88, "len": 8, "max": 255, "unit": "scalar" }, "name": "Misfire count 6"}
-  ]},
-{ "hdr": "DA1D", "dbg": true, "cmd": {"22": "2221"}, "freq": 1,
-  "signals": [
-    {"id": "TLX_GEAR", "path": "Transmission", "fmt": {"bix": 184, "len": 8, "max": 255, "unit": "scalar" }, "name": "Current gear"}
   ]},
 { "hdr": "DA1E", "dbg": true, "cmd": {"22": "2201"}, "freq": 1,
   "signals": [
