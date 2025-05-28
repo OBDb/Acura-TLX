@@ -1,23 +1,18 @@
 command_id: DA10.0105
 test_cases:
 - response: |-
-    18DAF11003410541
-    18DAF11E03410541
+    18DAF11003410545
+    18DAF11E03410545
   expected_values:
-    TLX_ECT: 25
-- response: 18DAF1100341054A
-  expected_values:
-    TLX_ECT: 34
+    TLX_ECT: 29
 - response: |-
-    18DAF11003410573
-    18DAF11E03410573
+    18DAF11003410565
+    18DAF11E03410565
   expected_values:
-    TLX_ECT: 75
-- response: |-
-    18DAF1100341057D
-    18DAF11E0341057D
+    TLX_ECT: 61
+- response: 18DAF11003410568
   expected_values:
-    TLX_ECT: 85
-- response: 18DAF1100341057F
+    TLX_ECT: 64
+- response: 18DAF1100341057B
   expected_values:
-    TLX_ECT: 87
+    TLX_ECT: 83
