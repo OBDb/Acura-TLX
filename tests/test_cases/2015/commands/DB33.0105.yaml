@@ -4,20 +4,20 @@ test_cases:
     18DAF11003410545
     18DAF11E03410545
   expected_values:
-    TLX_ECT: 29
-- response: 18DAF11003410562
+    ECT: 29
+- response: 18DAF1100341056A
   expected_values:
-    TLX_ECT: 58
+    ECT: 66
 - response: |-
     18DAF11003410578
     18DAF11E03410578
   expected_values:
-    TLX_ECT: 80
+    ECT: 80
+- response: 18DAF1100341057B
+  expected_values:
+    ECT: 83
 - response: |-
-    18DAF1100341057C
-    18DAF11E0341057C
+    18DAF1100341057B
+    18DAF11E0341057B
   expected_values:
-    TLX_ECT: 84
-- response: 18DAF1100341057E
-  expected_values:
-    TLX_ECT: 86
+    ECT: 83
