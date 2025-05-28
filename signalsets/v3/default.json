@@ -1,8 +1,4 @@
 { "commands": [
-{ "hdr": "DA10", "cmd": {"01": "05"}, "freq": 5, "dbgfilter": { "from": 2021, "years": [2016, 2017, 2019] },
-  "signals": [
-    {"id": "TLX_ECT", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Engine coolant temperature"}
-  ]},
 { "hdr": "DA10", "dbg": true, "cmd": {"22": "2615"}, "freq": 1,
   "signals": [
     {"id": "TLX_ACTIVE_CYL", "path": "Engine", "fmt": {"bix": 400, "len": 8, "max": 6, "unit": "scalar" }, "name": "Active cylinders"}
