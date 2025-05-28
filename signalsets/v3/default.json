@@ -34,7 +34,7 @@
         }}
     }
   ]},
-{ "hdr": "DA26", "cmd": {"22": "6001"}, "freq": 15, "dbgfilter": { "from": 2021,  "years": [2016, 2017, 2018, 2019] },
+{ "hdr": "DA26", "cmd": {"22": "6001"}, "freq": 15, "dbgfilter": { "from": 2021, "years": [2016, 2017, 2018, 2019] },
   "signals": [
     {"id": "TLX_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
     {"id": "TLX_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
