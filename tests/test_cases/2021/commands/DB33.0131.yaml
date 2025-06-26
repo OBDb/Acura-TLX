@@ -1,0 +1,32 @@
+command_id: DB33.0131
+test_cases:
+- expected_values:
+    CLR_DIST: 48313
+  response: 18DAF110044131BCB9
+- expected_values:
+    CLR_DIST: 48133
+  response: |-
+    18DAF110044131BCB9
+    18DAF11E044131BC05
+- expected_values:
+    CLR_DIST: 48384
+  response: 18DAF110044131BD00
+- expected_values:
+    CLR_DIST: 48222
+  response: |-
+    18DAF110044131BD13
+    18DAF11E044131BC5E
+- expected_values:
+    CLR_DIST: 48453
+  response: |-
+    18DAF110044131BDFA
+    18DAF11E044131BD45
+- expected_values:
+    CLR_DIST: 48639
+  response: 18DAF110044131BDFF
+- expected_values:
+    CLR_DIST: 48640
+  response: 18DAF110044131BE00
+- expected_values:
+    CLR_DIST: 48133
+  response: 18DAF11E044131BC05
