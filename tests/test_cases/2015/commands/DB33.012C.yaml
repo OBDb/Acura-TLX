@@ -1,5 +1,5 @@
 command_id: DB33.012C
 test_cases:
-- response: 18DAF11003412C00
-  expected_values:
+- expected_values:
     EGR_PCT: 0
+  response: 18DAF11003412C00
