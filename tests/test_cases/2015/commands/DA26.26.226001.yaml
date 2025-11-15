@@ -1,4 +1,4 @@
-command_id: DA26.226001
+command_id: DA26.26.226001
 test_cases:
 - expected_values:
     TLX_TP_FL: 211

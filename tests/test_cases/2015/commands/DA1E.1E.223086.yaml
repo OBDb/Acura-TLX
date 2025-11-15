@@ -1,4 +1,4 @@
-command_id: DA1E.223086
+command_id: DA1E.1E.223086
 test_cases:
 - expected_values:
     TLX_GEAR: P
