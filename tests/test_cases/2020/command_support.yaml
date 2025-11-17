@@ -68,13 +68,13 @@ unsupported_commands_by_ecu:
   "DA0E":
   - DA0E.222612
   "DA10":
-  - DA10.10.222666:TLX_EOL,TLX_EOT
+  - DA10.222666
   "DA11":
   - DA11.222663
   - DA11.222666
   - DA11.22266C
   "DA1D":
-  - DA1D.1D.222221:TLX_CURRENT_GEAR
+  - DA1D.222221
   "DA1E":
   - DA1E.222201
   "DA33":
