@@ -6,3 +6,8 @@ test_cases:
 - expected_values:
     IAT: 76
   response: 18DAF11003410F74
+- expected_values:
+    IAT: 20
+  response: |-
+    18DAF11E03410434
+    18DAF11003410F3C
