@@ -1,4 +1,8 @@
 { "commands": [
+{ "hdr": "DA10", "dbg": true, "cmd": {"22": "2661"}, "freq": 0.25,
+  "signals": [
+    {"id": "TLX_FUELAIR_CAR", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "div": 2229.08163265, "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"}
+  ]},
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "2610"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "TLX_GENERATOR", "path": "Engine",  "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
@@ -33,6 +37,46 @@
     {"id": "TLX_MISFIRE_3", "path": "ECU", "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 3"},
     {"id": "TLX_MISFIRE_4", "path": "ECU", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 4"}
   ]},
+{ "hdr": "DA11", "dbg": true, "cmd": {"22": "2611"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_AIRGAS_RATIO_V2", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "mul": 29.4, "div": 65535, "unit": "scalar" }, "name": "Air/gas ratio"}
+  ]},
+{ "hdr": "DA11", "dbg": true, "cmd": {"22": "2612"}, "freq": 1,
+  "signals": [
+    {"id": "TLX_VTEC_VALVE_CTRL", "path": "Engine", "fmt": {"bix": 175, "len": 1, "max": 1, "unit": "offon" }, "name": "Vtec valve control", "description": "VTEC works by switching between two (or sometimes three) different camshaft profiles by engaging or disengaging a mechanism that locks the valve rocker arms together. When VTEC is OFF, the engine operates using the standard cam profile, which is typically optimized for fuel efficiency and low-end torque. When VTEC is ON, the system switches to a high-performance cam profile that allows the valves to open wider and for a longer duration, enabling better airflow at higher RPMs for increased power."}
+  ]},
+{ "hdr": "DA11", "dbg": true, "cmd": {"22": "2660"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_RUNTM_V2", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535, "unit": "seconds" }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
+  ]},
+{ "hdr": "DA11", "dbg": true, "cmd": {"22": "2662"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_KNOCK_CONTROL_V2", "path": "Engine", "fmt": {"bix": 80, "len": 8,  "max": 1.99,             "mul": 1.99, "div": 255,             "unit": "scalar"  }, "name": "Knock control"},
+    {"id": "TLX_CAT_T",            "path": "Engine", "fmt": {"bix": 96, "len": 16, "max": 1500, "min": -40,              "div": 10,  "add": -40, "unit": "celsius" }, "name": "Catalyst temperature"}
+  ]},
+{ "hdr": "DA1D", "dbg": true, "cmd": {"22": "2201"}, "freq": 1,
+  "signals": [
+    {"id": "TLX_ATF_T_NEW_V3", "path": "Engine", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
+  ]},
+{ "hdr": "DA1D", "dbg": true, "cmd": {"22": "2203"}, "freq": 1,
+  "signals": [
+    {"id": "TLX_EOP_V3", "path": "ECU", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Oil pressure"}
+  ]},
+{ "hdr": "DA1D", "fcm1": true, "dbg": true, "cmd": {"22": "2221"}, "freq": 30,
+  "signals": [
+    {"id": "TLX_GEAR_V2", "path": "Transmission", "fmt": {"bix": 184, "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+  ]},
+{ "hdr": "DA1D", "dbg": true, "cmd": {"22": "2660"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_ODO_V2", "path": "Trips", "fmt": {"bix": 344, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
+  ]},
+{ "hdr": "DA1D", "dbg": true, "cmd": {"22": "2663"}, "freq": 1,
+  "signals": [
+    {"id": "TLX_MIS1", "path": "Engine.Misfires", "fmt": {"bix": 272, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1"},
+    {"id": "TLX_MIS2", "path": "Engine.Misfires", "fmt": {"bix": 288, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #2"},
+    {"id": "TLX_MIS3", "path": "Engine.Misfires", "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
+    {"id": "TLX_MIS4", "path": "Engine.Misfires", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"}
+  ]},
 { "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2201"}, "freq": 1,
   "signals": [
     {"id": "TLX_ATF_T_NEW", "path": "Engine", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
@@ -43,7 +87,7 @@
   ]},
 { "hdr": "DA1E", "rax": "1E", "cmd": {"22": "3083"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019], "from": 2021 },
   "signals": [
-    {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius" }, "name": "ATF temperature"}
+    {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius" }, "name": "Atf temperature"}
   ]},
 { "hdr": "DA1E", "rax": "1E", "cmd": {"22": "3086"}, "freq": 0.5, "dbgfilter": { "years": [2016, 2017, 2018, 2019], "from": 2021 },
   "signals": [
@@ -69,6 +113,10 @@
     {"id": "TLX_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "TLX_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
     {"id": "TLX_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"}
+  ]},
+{ "hdr": "DA60", "dbg": true, "cmd": {"22": "7029"}, "freq": 5,
+  "signals": [
+    {"id": "TLX_FLV", "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 32, "div": 100, "unit": "liters" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
 { "hdr": "DA60", "rax": "60", "cmd": {"22": "7028"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023], "from": 2026 },
   "signals": [
