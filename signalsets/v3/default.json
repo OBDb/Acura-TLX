@@ -77,14 +77,6 @@
     {"id": "TLX_MIS3", "path": "Engine.Misfires", "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #3"},
     {"id": "TLX_MIS4", "path": "Engine.Misfires", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count #4"}
   ]},
-{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2201"}, "freq": 1,
-  "signals": [
-    {"id": "TLX_ATF_T_NEW", "path": "Engine", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
-  ]},
-{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2203"}, "freq": 1,
-  "signals": [
-    {"id": "TLX_EOP", "path": "ECU", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Oil pressure"}
-  ]},
 { "hdr": "DA1E", "rax": "1E", "cmd": {"22": "3083"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019], "from": 2021 },
   "signals": [
     {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius" }, "name": "Atf temperature"}
@@ -112,7 +104,11 @@
     {"id": "TLX_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
     {"id": "TLX_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
     {"id": "TLX_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
-    {"id": "TLX_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"}
+    {"id": "TLX_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "TLX_TT_FR", "path": "Tires", "fmt": {"bix": 192, "len": 8, "sign": true, "unit": "celsius" }, "name": "Front right tire temperature"},
+    {"id": "TLX_TT_FL", "path": "Tires", "fmt": {"bix": 200, "len": 8, "sign": true, "unit": "celsius" }, "name": "Front left tire temperature"},
+    {"id": "TLX_TT_RR", "path": "Tires", "fmt": {"bix": 208, "len": 8, "sign": true, "unit": "celsius" }, "name": "Rear right tire temperature"},
+    {"id": "TLX_TT_RL", "path": "Tires", "fmt": {"bix": 216, "len": 8, "sign": true, "unit": "celsius" }, "name": "Rear left tire temperature"}
   ]},
 { "hdr": "DA60", "dbg": true, "cmd": {"22": "7029"}, "freq": 5,
   "signals": [
