@@ -179,6 +179,7 @@ unsupported_commands_by_ecu:
   - DA1D.1D.222203:TLX_EOP
   - DA1D.222221
   "DA1E":
+  - DA1E.00001E.223086
   - DA1E.222201
   "DA33":
   - DA33.222201
