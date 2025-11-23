@@ -1,18 +1,18 @@
 { "commands": [
-{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2610"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2610"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "TLX_GENERATOR", "path": "Engine",  "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
     {"id": "TLX_AC_CLUTCH", "path": "Climate", "fmt": {"bix": 256, "len": 8, "max": 255,                         "unit": "scalar"  }, "name": "Air conditioner clutch"}
   ]},
-{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2611"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2611"}, "freq": 0.25, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "TLX_FUEL_AIR_RATIO", "path": "Fuel", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"}
   ]},
-{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2612"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2612"}, "freq": 0.25, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "TLX_VTEC_CTRL", "path": "ECU", "fmt": {"bix": 168, "len": 8, "max": 255, "unit": "scalar" }, "name": "Variable valve control"}
   ]},
-{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2615"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023], "from": 2026 },
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2615"}, "freq": 0.5, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023], "from": 2026 },
   "signals": [
     {"id": "TLX_ACTIVE_CYL", "path": "Engine", "fmt": {"bix": 400, "len": 8, "max": 6, "unit": "scalar" }, "name": "Active cylinders"}
   ]},
@@ -21,7 +21,7 @@
     {"id": "TLX_ODO",   "path": "Trips",  "fmt": {"bix": 344, "len": 24, "max": 16777215, "unit": "kilometers" }, "name": "Odometer",                "suggestedMetric": "odometer"},
     {"id": "TLX_RUNTM", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535,    "unit": "seconds"    }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
   ]},
-{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2662"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2662"}, "freq": 0.25, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "TLX_KNOCK_CTRL", "path": "ECU",    "fmt": {"bix": 80,  "len": 8, "max": 2,   "mul": 2,   "div": 255, "unit": "scalar"  }, "name": "Knock control"},
     {"id": "TLX_VTC_DUTY",   "path": "Engine", "fmt": {"bix": 224, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Variable valve timing duty"}
@@ -31,21 +31,23 @@
     {"id": "TLX_MISFIRE_1", "path": "ECU", "fmt": {"bix": 272, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 1"},
     {"id": "TLX_MISFIRE_2", "path": "ECU", "fmt": {"bix": 288, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 2"},
     {"id": "TLX_MISFIRE_3", "path": "ECU", "fmt": {"bix": 304, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 3"},
-    {"id": "TLX_MISFIRE_4", "path": "ECU", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 4"}
+    {"id": "TLX_MISFIRE_4", "path": "ECU", "fmt": {"bix": 320, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 4"},
+    {"id": "TLX_MISFIRE_5", "path": "ECU", "fmt": {"bix": 336, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 5"},
+    {"id": "TLX_MISFIRE_6", "path": "ECU", "fmt": {"bix": 352, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 6"}
   ]},
-{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2201"}, "freq": 1,
+{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2201"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "TLX_ATF_T_NEW", "path": "Engine", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
   ]},
-{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2203"}, "freq": 1,
+{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2203"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
   "signals": [
     {"id": "TLX_EOP", "path": "ECU", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Oil pressure"}
   ]},
 { "hdr": "DA1E", "rax": "1E", "cmd": {"22": "3083"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019], "from": 2021 },
   "signals": [
-    {"id": "TLX_ATF", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius" }, "name": "ATF temperature"}
+    {"id": "TLX_ATF_T", "path": "Transmission", "fmt": {"bix": 112, "len": 8, "max": 200, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
   ]},
-{ "hdr": "DA1E", "rax": "1E", "cmd": {"22": "3086"}, "freq": 0.5, "dbgfilter": { "years": [2016, 2017, 2018, 2019], "from": 2021 },
+{ "hdr": "DA1E", "rax": "1E", "cmd": {"22": "3086"}, "freq": 0.25, "filter": { "to": 2020 }, "dbgfilter": { "years": [2016, 2017, 2018, 2019] },
   "signals": [
     {"id": "TLX_GEAR", "path": "Transmission", "name": "Transmission gear", "fmt": {"bix": 160, "len": 8, "map": {
           "0":  { "description": "Park",    "value": "P" },
@@ -63,12 +65,16 @@
         }}
     }
   ]},
-{ "hdr": "DA26", "rax": "26", "cmd": {"22": "6001"}, "freq": 15, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023], "from": 2026 },
+{ "hdr": "DA26", "rax": "26", "cmd": {"22": "6001"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023], "from": 2026 },
   "signals": [
-    {"id": "TLX_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
-    {"id": "TLX_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "TLX_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
-    {"id": "TLX_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535, "unit": "kilopascal" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"}
+    {"id": "TLX_TP_FR", "path": "Tires", "fmt": {"bix": 64,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Front right tire pressure",    "suggestedMetric": "frontRightTirePressure"},
+    {"id": "TLX_TP_FL", "path": "Tires", "fmt": {"bix": 80,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Front left tire pressure",     "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "TLX_TP_RR", "path": "Tires", "fmt": {"bix": 96,  "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Rear right tire pressure",     "suggestedMetric": "rearRightTirePressure"},
+    {"id": "TLX_TP_RL", "path": "Tires", "fmt": {"bix": 112, "len": 16, "max": 65535,                            "unit": "kilopascal" }, "name": "Rear left tire pressure",      "suggestedMetric": "rearLeftTirePressure"},
+    {"id": "TLX_TT_FR", "path": "Tires", "fmt": {"bix": 192, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Front right tire temperature"},
+    {"id": "TLX_TT_FL", "path": "Tires", "fmt": {"bix": 200, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Front left tire temperature"},
+    {"id": "TLX_TT_RR", "path": "Tires", "fmt": {"bix": 208, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear right tire temperature"},
+    {"id": "TLX_TT_RL", "path": "Tires", "fmt": {"bix": 216, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear left tire temperature"}
   ]},
 { "hdr": "DA60", "rax": "60", "cmd": {"22": "7028"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023], "from": 2026 },
   "signals": [
