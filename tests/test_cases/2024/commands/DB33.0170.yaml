@@ -3,16 +3,15 @@ test_cases:
 - expected_values:
     BP_A: BP_A_CL
     BP_A_ACT: 129.03125
-    BP_A_ACT_SUP: 1.0
+    BP_A_ACT_SUP: 1
     BP_A_CMD: 122.90625
-    BP_A_CMD_SUP: 1.0
-    BP_A_SUP: 1.0
+    BP_A_CMD_SUP: 1
+    BP_A_SUP: 1
     BP_B_ACT: 0
     BP_B_ACT_SUP: 0
     BP_B_CMD: 0
     BP_B_CMD_SUP: 0
     BP_B_SUP: 0
-    BP_B: null
   response: |-
     18DAF110100C4170070F5D10
     18DAF1102121000000000255

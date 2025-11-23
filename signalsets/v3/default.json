@@ -35,11 +35,11 @@
     {"id": "TLX_MISFIRE_5", "path": "ECU", "fmt": {"bix": 336, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 5"},
     {"id": "TLX_MISFIRE_6", "path": "ECU", "fmt": {"bix": 352, "len": 16, "max": 65535, "unit": "scalar" }, "name": "Misfire count, cylinder 6"}
   ]},
-{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2201"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
+{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2201"}, "freq": 1,
   "signals": [
     {"id": "TLX_ATF_T_NEW", "path": "Engine", "fmt": {"bix": 208, "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Transmission fluid temperature"}
   ]},
-{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2203"}, "freq": 1, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024], "from": 2026 },
+{ "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2203"}, "freq": 1,
   "signals": [
     {"id": "TLX_EOP", "path": "ECU", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Oil pressure"}
   ]},
