@@ -7,7 +7,8 @@ test_cases:
     IAT: 76
   response: 18DAF11003410F74
 - expected_values:
-    IAT: 20
+    IAT: 20.0
+    LOAD_PCT: 20.39216
   response: |-
     18DAF11E03410434
     18DAF11003410F3C
