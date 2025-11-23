@@ -39,7 +39,7 @@ test_cases:
     TLX_MISFIRE_2: 0
     TLX_MISFIRE_3: 0
     TLX_MISFIRE_4: 0
-    TLX_MISFIRE_5: 1.0
+    TLX_MISFIRE_5: 1
     TLX_MISFIRE_6: 0
   response: |-
     18DAF1101039622663F33FFF
