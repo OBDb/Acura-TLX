@@ -1,8 +1,8 @@
 command_id: DB33.0109
 test_cases:
 - expected_values:
-    LONGFT2: -37.375
+    LONGFT2: -9.375
   response: 18DAF11003410974
 - expected_values:
-    LONGFT2: -36.59375
+    LONGFT2: -8.59375
   response: 18DAF11003410975
