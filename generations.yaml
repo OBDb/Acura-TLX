@@ -4,10 +4,20 @@ references:
 generations:
   - name: "First Generation"
     start_year: 2015
+    end_year: 2017
+    description: "The first generation TLX replaced both the TL and TSX in Acura's lineup, offering a sport sedan that bridged the gap between the two previous models. Engine options included a 2.4L four-cylinder with 206 HP paired with an 8-speed dual-clutch transmission, or a 3.5L V6 with 290 HP paired with a 9-speed automatic. The V6 model was available with Acura's Super Handling All-Wheel Drive (SH-AWD) system. Model codes included UB1 (2.4L FWD), UB2 (3.5L FWD), and UB3 (3.5L AWD)."
+
+  - name: "First Generation (2018 Facelift)"
+    start_year: 2018
     end_year: 2020
-    description: "The first generation TLX replaced both the TL and TSX in Acura's lineup, offering a sport sedan that bridged the gap between the two previous models. Engine options included a 2.4L four-cylinder with 206 HP paired with an 8-speed dual-clutch transmission, or a 3.5L V6 with 290 HP paired with a 9-speed automatic. The V6 model was available with Acura's Super Handling All-Wheel Drive (SH-AWD) system. A facelift in 2018 updated the exterior styling to incorporate Acura's diamond pentagon grille."
+    description: "The 2018 facelift introduced revised front fascia, fenders, and Acura's diamond pentagon grille, along with restyled wheels and new infotainment features including Apple CarPlay and Android Auto support. The A-Spec performance trim was added as a new option. The facelift maintained the same engine options as the original generation: 2.4L four-cylinder (206 HP) and 3.5L V6 (290 HP). The extended-wheelbase TLX-L variant was also introduced for the Chinese market (model code UB4)."
 
   - name: "Second Generation"
     start_year: 2021
+    end_year: 2023
+    description: "The second generation TLX was built on a new Acura-exclusive platform and featured a return to performance-focused engineering with double-wishbone front suspension. The standard TLX came with a turbocharged 2.0L four-cylinder producing 272 HP paired with a 10-speed automatic. The high-performance Type S variant, reviving the Type S nameplate after a decade-long hiatus, featured a turbocharged 3.0L V6 with 355 HP, Brembo brakes, adaptive dampers, and standard SH-AWD. Model codes were UB5 (2.0T FWD), UB6 (2.0T AWD), and UB7 (Type S)."
+
+  - name: "Second Generation (2024 Facelift)"
+    start_year: 2024
     end_year: 2025
-    description: "The second generation TLX features more distinctive styling and a return to a performance focus. Built on an Acura-exclusive platform with double-wishbone front suspension, the standard TLX comes with a turbocharged 2.0L four-cylinder producing 272 HP. The performance-oriented Type S variant, reviving Acura's Type S performance line after a decade-long hiatus, features a turbocharged 3.0L V6 with 355 HP, along with Brembo brakes, adaptive dampers, and sport-tuned SH-AWD. The interior showcases improved materials and Acura's True Touchpad Interface infotainment system. Production ended in July 2025 with the 2025 model year due to declining sedan sales."
+    description: "The 2024 facelift featured updated exterior styling with a new frameless Diamond Pentagon grille, new wheel designs, and updated rear fascia on the A-Spec model. Interior upgrades included a new 10.5-inch head-up display, new 12.3-inch digital instrument cluster, larger 12.3-inch touchscreen, increased interior insulation, standard ELS STUDIO Premium Audio, and new LED ambient cabin lighting. Safety enhancements included improved AcuraWatch driver-assistance systems with new front millimeter-wave radar and updated surround-view camera. The lineup was simplified to three models: Technology (FWD), A-Spec (AWD), and Type S. Production concluded in July 2025."
