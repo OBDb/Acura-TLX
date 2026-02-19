@@ -41,4 +41,3 @@ supported_commands_by_ecu:
   - 0149:APP_D
   - 014A:APP_E
   - 014C:TAC_PCT
-  - 0151:FUEL_TYP
