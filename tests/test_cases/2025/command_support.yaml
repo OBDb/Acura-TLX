@@ -67,8 +67,10 @@ supported_commands_by_ecu:
   - DB33.0131:CLR_DIST
   - DB33.0142:VPWR
   - DB33.0144:EQ_RAT
+  - DB33.0147:TP_B
   - DB33.0149:APP_D
   - DB33.014A:APP_E
+  - DB33.0166:MAFA,MAFA_SUP,MAFB,MAFB_SUP
   - DB33.01A6:ODO
 unsupported_commands_by_ecu:
   "DA1D":
