@@ -6,3 +6,6 @@ test_cases:
 - expected_values:
     SHRTFT2: -6.25
   response: 18DAF11003410878
+- expected_values:
+    SHRTFT2: -5.46875
+  response: 18DAF11003410879
