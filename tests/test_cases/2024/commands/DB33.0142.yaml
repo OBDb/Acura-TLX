@@ -1,0 +1,8 @@
+command_id: DB33.0142
+test_cases:
+- expected_values:
+    VPWR: 13.416
+  response: |-
+    18DAF1EF0441423809
+    18DAF11004414237E6
+    18DAF11E0441423468
