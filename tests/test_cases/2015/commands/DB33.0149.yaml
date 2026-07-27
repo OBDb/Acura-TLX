@@ -5,3 +5,28 @@ test_cases:
   response: |-
     18DAF11003414931
     18DAF11E03414931
+- expected_values:
+    APP_D: 19.60784
+  response: |-
+    18DAF11003414932
+    18DAF11E03414932
+- expected_values:
+    APP_D: 27.45098
+  response: |-
+    18DAF11003414946
+    18DAF11E03414946
+- expected_values:
+    APP_D: 31.76471
+  response: |-
+    18DAF11003414950
+    18DAF11E03414951
+- expected_values:
+    APP_D: 33.33333
+  response: |-
+    18DAF11003414955
+    18DAF11E03414955
+- expected_values:
+    APP_D: 40
+  response: |-
+    18DAF11003414964
+    18DAF11E03414966
