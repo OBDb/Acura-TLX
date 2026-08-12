@@ -10,11 +10,17 @@ test_cases:
     CATEMP11: 590.7
   response: 18DAF11004413C18A3
 - expected_values:
+    CATEMP11: 596
+  response: 18DAF11004413C18D8
+- expected_values:
     CATEMP11: 621.2
   response: 18DAF11004413C19D4
 - expected_values:
     CATEMP11: 633
   response: 18DAF11004413C1A4A
+- expected_values:
+    CATEMP11: 665.7
+  response: 18DAF11004413C1B91
 - expected_values:
     CATEMP11: 775.5
   response: 18DAF11004413C1FDB
