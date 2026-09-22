@@ -27,3 +27,6 @@ test_cases:
 - expected_values:
     CATEMP21: 783.5
   response: 18DAF11004413D202B
+- expected_values:
+    CATEMP21: 784.9
+  response: 18DAF11004413D2039
