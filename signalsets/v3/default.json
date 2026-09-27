@@ -1,4 +1,9 @@
-{ "commands": [
+{ "ecu": [
+    { "hdr": "DA10", "type": "engine" },
+    { "hdr": "DA1E", "type": "transmission" },
+    { "hdr": "DA26", "type": "tpms" }
+  ],
+  "commands": [
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "2610"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023, 2024] },
   "signals": [
     {"id": "TLX_GENERATOR", "path": "Engine",  "fmt": {"bix": 184, "len": 8, "max": 100, "mul": 100, "div": 255, "unit": "percent" }, "name": "Generator"},
