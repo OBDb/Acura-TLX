@@ -81,9 +81,13 @@
     {"id": "TLX_TT_RR", "path": "Tires", "fmt": {"bix": 208, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear right tire temperature"},
     {"id": "TLX_TT_RL", "path": "Tires", "fmt": {"bix": 216, "len": 8,  "max": 127,   "min": -128, "sign": true, "unit": "celsius"    }, "name": "Rear left tire temperature"}
   ]},
-{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7028"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023] },
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7028"}, "freq": 5, "filter": { "from": 2021 }, "dbgfilter": { "years": [2022, 2023] },
   "signals": [
-    {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 136, "len": 8, "max": 127, "min": -127, "sign": true, "unit": "celsius" }, "name": "Outside air temperature"}
+    {"id": "TLX_AAT", "path": "Climate", "fmt": {"bix": 136, "len": 8, "max": 214, "min": -40, "add": -40, "nullmax": 214, "unit": "celsius" }, "name": "Outside air temperature"}
+  ]},
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7028"}, "freq": 5, "filter": { "to": 2020 }, "dbgfilter": { "years": [2016, 2017, 2018, 2019] },
+  "signals": [
+    {"id": "TLX_AAT_FIRSTGEN", "path": "Climate", "fmt": {"bix": 136, "len": 8, "max": 127, "min": -127, "sign": true, "unit": "celsius" }, "name": "Outside air temperature"}
   ]}
 ]
 }
