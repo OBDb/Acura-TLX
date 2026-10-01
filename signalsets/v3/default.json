@@ -29,7 +29,7 @@
     {"id": "TLX_ODO",   "path": "Trips",  "fmt": {"bix": 344, "len": 24, "max": 16777215, "nullmin": 0, "unit": "kilometers" }, "name": "Odometer",                "suggestedMetric": "odometer"},
     {"id": "TLX_RUNTM", "path": "Clocks", "fmt": {"bix": 368, "len": 16, "max": 65535,                  "unit": "seconds"    }, "name": "Time since engine start", "description": "How long it's been since the engine started."}
   ]},
-{ "hdr": "DA10", "rax": "10", "dbg": true, "cmd": {"22": "2661"}, "freq": 0.25,
+{ "hdr": "DA10", "rax": "10", "cmd": {"22": "2661"}, "freq": 0.25, "dbgfilter": { "from": 2016 },
   "signals": [
     {"id": "TLX_FUELAIR_CAR", "path": "Engine", "fmt": {"bix": 64, "len": 16, "max": 29.4, "div": 2229.08163265, "unit": "scalar" }, "name": "Fuel/air commanded equivalence ratio"}
   ]},
@@ -96,7 +96,7 @@
   "signals": [
     {"id": "TLX_BRK_P", "path": "Electrical", "fmt": {"bix": 56, "len": 16, "max": 120, "add": -25, "unit": "bars" }, "name": "Brake pressure"}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "7022"}, "freq": 30,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7022"}, "freq": 30, "dbgfilter": { "from": 2016 },
   "signals": [
     {"id": "TLX_ODO_V3", "path": "Trips", "fmt": {"bix": 48, "len": 24, "max": 200000, "unit": "miles" }, "name": "Odometer, variation 3"}
   ]},
@@ -112,7 +112,7 @@
   "signals": [
     {"id": "TLX_AAT_C", "path": "Climate", "fmt": {"bix": 132, "len": 12, "max": 2047, "min": -40, "sign": true, "nullmax": 61, "unit": "celsius" }, "name": "Outside air temperature"}
   ]},
-{ "hdr": "DA60", "rax": "60", "dbg": true, "cmd": {"22": "7029"}, "freq": 30,
+{ "hdr": "DA60", "rax": "60", "cmd": {"22": "7029"}, "freq": 30, "dbgfilter": { "from": 2016 },
   "signals": [
     {"id": "TLX_FLV", "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 655, "div": 100, "nullmax": 655, "unit": "liters" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
   ]},
