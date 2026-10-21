@@ -18,7 +18,8 @@
   ]},
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "2612"}, "freq": 0.25, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023, 2024] },
   "signals": [
-    {"id": "TLX_VTEC_CTRL", "path": "ECU", "fmt": {"bix": 168, "len": 8, "max": 255, "unit": "scalar" }, "name": "Variable valve control"}
+    {"id": "TLX_VTEC_PSW", "path": "Engine", "fmt": {"bix": 174, "len": 1, "max": 1, "unit": "offon" }, "name": "VTEC pressure switch"},
+    {"id": "TLX_VTEC_SOL", "path": "Engine", "fmt": {"bix": 175, "len": 1, "max": 1, "unit": "offon" }, "name": "VTEC solenoid valve"}
   ]},
 { "hdr": "DA10", "rax": "10", "cmd": {"22": "2615"}, "freq": 0.5, "dbgfilter": { "years": [2016, 2017, 2018, 2019, 2022, 2023] },
   "signals": [
@@ -53,7 +54,7 @@
   ]},
 { "hdr": "DA1D", "rax": "1D", "dbg": true, "cmd": {"22": "2203"}, "freq": 1,
   "signals": [
-    {"id": "TLX_EOP", "path": "ECU", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Oil pressure"}
+    {"id": "TLX_TRANS_OIL_P2", "path": "Transmission", "fmt": {"bix": 72, "len": 8, "max": 255, "unit": "kilopascal" }, "name": "Transmission oil pressure sensor 2"}
   ]},
 { "hdr": "DA1E", "rax": "1E", "cmd": {"22": "3083"}, "freq": 5, "dbgfilter": { "years": [2016, 2017, 2018, 2019], "from": 2021 },
   "signals": [
